@@ -1825,6 +1825,10 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+#content {
+	text-align: justify;
+}
+
 /* Button */
 
 	input[type="submit"],
@@ -3028,6 +3032,10 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			#content {
+				text-align: center;
+			}
+
 				.spotlight .content {
 					-moz-flex: 0 1 auto;
 					-webkit-flex: 0 1 auto;
@@ -3748,6 +3756,7 @@ input, select, textarea {
 				#footer .copyright {
 					text-align: left;
 				}
+				
 
 		}
 
