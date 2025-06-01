@@ -11,6 +11,8 @@ jobs:
     env:
       CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Sync site to S3
         uses: jakejarvis/s3-sync-action@master
         with:
