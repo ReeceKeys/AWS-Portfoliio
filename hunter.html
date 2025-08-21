@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Reece Harris</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+				<h1>Software Quality Assurance</h1>
+				<p><span id="intro"></span></p>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html" style="background-color: #303030; color: aliceblue;">Home</a></li>
+					<li><a href="#dvt" class="active">Manual DVT Testing</a></li>
+					<li><a href="#automation">Software Automation</a></li>
+					<li><a href="#cta">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Manual DVT Testing -->
+				<section id="dvt" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Manual DVT Testing</h2>
+							</header>
+							<p>
+								At Hunter Industries, I gained hands-on experience performing manual DVT (Design Verification Test) procedures on various in-house irrigation controllers and PCBs. This process involved validating hardware functions, stress-testing electrical interfaces, and confirming firmware interactions.
+							</p>
+							<p>
+								My responsibilities included interpreting electrical schematics, probing board-level signals with oscilloscopes and logic analyzers, and meticulously recording test outcomes. This testing phase was critical to uncovering edge-case failures and ensuring the hardware conformed to design specifications before mass production.
+							</p>
+						</div>
+						<span class="image"><img src="images/controller.png" alt="Manual Testing with Logic Probes" /></span>
+					</div>
+				</section>
+
+				<!-- Software Automation -->
+				<section id="automation" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Low Level Communications</h2>
+							</header>
+							<p>
+								In parallel with manual testing, I modernized a legacy Visual Basic logging utility into a robust C++ application. This migration improved performance, modularity, and maintainability — allowing the QA team to scale up testing and streamline data collection.
+							</p>
+							<p>
+								In this project, I engineered a custom RS485-based communication layer between the C++ application and Hunter’s embedded logging boards. This replaced expensive third-party tools and enabled precise real-time interaction with hardware devices. The resulting automation framework reduced test cycle time, enabled repeatable validation scenarios, and improved visibility into device behavior.
+							</p>
+						</div>
+						<span class="image"><img src="images/uart.png" alt="Software-to-PCB QA Automation" /></span>
+					</div>
+				</section>
+
+				<!-- Contact -->
+				<section id="cta" class="main special">
+					<header class="major">
+						<h2>Contact Reece</h2>
+						<p>Believe that Reece could benefit your company?<br/>Let's discuss it.</p>
+					</header>
+					<footer class="major">
+						<ul class="actions special">
+							<li><a href="mailto:rmharris333@gmail.com" class="button primary">Email</a></li>
+							<li><a href="tel:(831)454-6890" class="button">Call</a></li>
+						</ul>
+					</footer>
+				</section>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/reece-harris333/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/ReeceKeys" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					</ul>
+					<dl class="alt">
+						<dt>Location</dt>
+						<dd>Carlsbad, CA</dd>
+					</dl>
+				</section>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Typed.js -->
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<script>
+			var typed = new Typed('#intro', {
+				strings: ["Building smarter QA tools with C++"],
+				typeSpeed: 35,
+				backSpeed: 35,
+				backDelay: 1200,
+				startDelay: 2000,
+				showCursor: true,
+				smartBackspace: true,
+				loop: false,
+				onComplete: function() {
+					document.querySelector('.typed-cursor').style.display = 'none';
+				}
+			});
+		</script>
+
+	</body>
+</html>
