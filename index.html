@@ -24,15 +24,13 @@
 					<header id="header" class="alt">
 						<h1>Reece Harris</h1>
 						<br>
-						<ul style="list-style-type: none; padding: 0; margin: 0;">
-							<li>
-							<a href="tel:+18314546890" style="text-decoration: none !important; color: inherit !important;">+1 (831) 454-6890</a> |
-							<a href="mailto:rmharris333@gmail.com" style="text-decoration: none !important; color: inherit !important;">rmharris333@gmail.com</a> |
-							GitHub:
-							<a href="https://github.com/ReeceKeys" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important; color: inherit !important;">ReeceKeys</a>
-							</li>
+						<ul class="icons">
+								<li><a href="tel:+18314546890" target="_blank" class="icon solid fa-phone alt"><span class="label">Phone</span></a></li>
+								<li><a href="mailto:rmharris333@gmail.com" target="_blank" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
+								<li><a href="https://www.linkedin.com/in/reece-harris333/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://github.com/ReeceKeys" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 						</ul>
-						<br>
+						<p>Reece is <span id="element"></span></p>
 					</header>
 
 				<!-- Nav -->
@@ -55,13 +53,14 @@
 										<header class="major">
 											<h2>Meet Me</h2>
 											<p>Always building&nbsp;&nbsp;|&nbsp;&nbsp;Always learning</p>
-											<p>Click below to learn more about Reece.</p>
+											<p><span style="font-weight: bold;">Click below</span> to learn more about Reece.</p>
 										</header>
 										<ul class="actions">
 											<li><a href="about.html" class="button">Learn More</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/reece.jpg" alt="" /></span>
+									<a href="about.html" style="text-decoration: none !important; border: none !important;">
+									<span class="image"><img src="images/reece.jpg" alt="" /></span></a>
 								</div>
 							</section>
 
@@ -69,7 +68,6 @@
 							<section id="first" class="main special">
 								<header class="major">
 									<h2>Projects</h2>
-									<p class="typed">Reece is a <span id="element" style="color: rgb(102, 203, 102);"></span></p>
 								</header>
 								<ul class="features">
 									<li>
@@ -100,7 +98,7 @@
 								<header class="major">
 									<h2>Experience</h2>
 									<p>Reece has worked multiple positions which have contribute to his technical and personal repetoire.<br />
-									Click below to learn more.</p>
+									<span style="font-weight: bold;">Click below</span> to learn more.</p>
 								</header>
 								<ul class="statistics" style="list-style:none; padding:0; margin:0;">
 									<li class="style3"
@@ -143,7 +141,7 @@
 							<section id="cta" class="main special">
 								<header class="major">
 									<h2>Contact Reece</h2>
-									<p>Believe that Reece could benefit your company? <br>Let's discuss it.
+									<p>Believe that Reece could benefit your company? <br><span style="font-weight: bold;">Let's discuss it.</span>
 									</p>
 								</header>
 								<footer class="major">
@@ -158,17 +156,19 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<ul class="icons">
+					<section>
+						<ul class="icons">
+								<li><a href="tel:+18314546890" target="_blank" class="icon solid fa-phone alt"><span class="label">Phone</span></a></li>
+								<li><a href="mailto:rmharris333@gmail.com" target="_blank" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
 								<li><a href="https://www.linkedin.com/in/reece-harris333/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
 								<li><a href="https://github.com/ReeceKeys" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							</ul>
-							<dl class="alt">
-								<dt>Location</dt>
-								<dd>Carlsbad, CA</dd>
-							</dl>
-						</section>
-					</footer>
+						</ul>
+						<dl class="alt">
+							<dt>Location</dt>
+							<dd>Carlsbad, CA</dd>
+						</dl>
+					</section>
+				</footer>
 
 			</div>
 
@@ -186,12 +186,19 @@
 			<!--Typed.js-->
 			<script>
 				var typed = new Typed('#element', {
-				strings: ["programmer", "project manager", "problem solver", "team player",
-				"critical thinker", "friend"
+				strings: [
+					'a <span style="color: rgb(102, 203, 102);">programmer</span>',
+					'a <span style="color: rgb(102, 203, 102);">project leader</span>',
+					'a <span style="color: rgb(102, 203, 102);">problem solver</span>',
+					'a <span style="color: rgb(102, 203, 102);">team player</span>',
+					'a <span style="color: rgb(102, 203, 102);">critical thinker</span>',
+					'a <span style="color: rgb(102, 203, 102);">designer</span>',
+					'a <span style="color: rgb(102, 203, 102);">friend</span>'
 				],
 				typeSpeed: 40,
 				backSpeed: 35,
 				backDelay: 1200,
+				startDelay: 2000,
 				showCursor: true, // Show cursor initially
 				smartBackspace: true,
 				loop: true
